@@ -1,0 +1,53 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "description": "frontend for Solar Solve",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "alias": {
+        "react-dom": "@hot-loader/react-dom"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@hot-loader/react-dom": "^16.11.0",
+        "@mapbox/geojson-merge": "^1.1.1",
+        "@types/geojson": "^7946.0.7",
+        "a": "^2.1.2",
+        "app": "^0.1.0",
+        "axios": "^0.19.2",
+        "bloomer": "^0.6.5",
+        "bulma": "^0.8.0",
+        "formik": "^2.1.2",
+        "geojson": "^0.5.0",
+        "map": "^1.0.1",
+        "mapbox-gl": "^1.6.1",
+        "mapbox-gl-draw": "^0.16.0",
+        "menu": "^0.2.5",
+        "rea": "0.0.1",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-jsonschema-form": "^1.8.1",
+        "react-map-gl": "^5.1.5",
+        "react-map-gl-draw": "^0.16.1",
+        "react-router-dom": "^5.1.2",
+        "react-schema-form": "^0.8.3",
+        "src": "^1.1.2",
+        "turf": "^3.0.14"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.7.7",
+        "@babel/preset-env": "^7.7.7",
+        "@babel/preset-react": "^7.7.4",
+        "@types/react": "^16.9.17",
+        "@types/react-dom": "^16.9.4",
+        "babel-preset-env": "^1.7.0",
+        "parcel-bundler": "^1.12.4",
+        "react-hot-loader": "^4.12.18",
+        "typescript": "^3.7.3"
+    }
+}
