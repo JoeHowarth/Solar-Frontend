@@ -1,0 +1,32 @@
+- [ ] Solve —> Something more obvious  (e.g. Solve for <county_name>)
+- [ ] Zooming in county —> display county name
+- [ ] Parameters:
+    - [ ] Make sure it’s clear you are not showing (ie. where trees = 10)
+    - [ ] Change model parameters?
+    - [ ] Change variable names to non-camel-case
+    - [ ] Have some checks for param values (e.g. Confirm button)
+- [ ] Edit Parameters: Make it hyperlink instead of button
+- [ ] Grey out Solve, until they select region. If they select Solve, pop-up, please select county before countinuing.
+- [ ] Terrain map vs mixed map
+- [ ] When Solving —> Zoom to bounding box of county or leave county outline
+- [ ] Profit —> Make it clear they are different sites
+- [ ] Get feedback from client on what profit to see (total/yearly)
+- [ ] Zoom to bounding box of sites
+- [ ] Name sites —> Give them tree names? (or numbers)
+- [ ] (very optional) offer sort-by option when generating sites
+- [ ] Change highlighting of selected site
+- [ ] Add more orange color for sites. Site cohesion is important
+- [ ] Increase distance between site profits
+- [ ] Shade Profit options when mouse overlay
+- [ ] Shade site information a bit
+- [ ] We use Flat 2.0 design — read up more on this?
+- [ ] Switch between Full site/Parcels/heat-map. Don’t show too much info (maybe allow toggling for each)
+- [ ] To add toggles/extra stuff, start adding from left to right
+- [ ] Maybe add back arrow (bottom of list, or if too much info at the top)
+- [ ] Little questionmark (?) things around Profit — explain how it works
+
+First Priorities:
+- [ ] User parameters. Make clear what they have
+- [ ] Grey out Solve button if county not selected
+- [ ] Pop-up to ask user to select county
+- [ ] Maybe make logo seem clickable? —> make it a bit bigger when mouse overlay
