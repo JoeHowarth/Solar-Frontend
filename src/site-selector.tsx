@@ -1,14 +1,11 @@
 import React, { useEffect, useState, useContext } from "react";
 import { GeoJSON } from "geojson";
 import { Site, MockAPI } from "./solar-api";
-import { Card } from "bloomer/lib/components/Card/Card";
-import { CardContent } from "bloomer/lib/components/Card/CardContent";
-import { Content } from "bloomer/lib/elements/Content";
-import { CardHeader } from "bloomer/lib/components/Card/Header/CardHeader";
-import { CardHeaderTitle } from "bloomer/lib/components/Card/Header/CardHeaderTitle";
 import geojsonMerge from "@mapbox/geojson-merge";
 import { MapContext, mapStartBox, clickAble } from "./index";
 import turf from "turf";
+import Card from 'react-bulma-components/lib/components/card'
+import Content from 'react-bulma-components/lib/components/content'
 
 const SiteSelector = ({ params, county }) => {
     const api = new MockAPI();
@@ -138,11 +135,11 @@ const SitePanel = ({
     console.log("site", site);
     return (
         <Card onClick={onClick}>
-            <CardHeader>
-                <CardHeaderTitle>Profit: {site.profit}</CardHeaderTitle>
-            </CardHeader>
+            <Card.Header>
+                <Card.Header.Title>Profit: {site.profit}</Card.Header.Title>
+            </Card.Header>
             {isSelected && site.info ? (
-                <CardContent>
+                <Card.Content>
                     <Content>
                         {/* {Object.keys(site.info).map(k => (
                             <p key={k}>{k}: {site.info[k]})}</p>
@@ -161,7 +158,7 @@ const SitePanel = ({
                         </p>
                         {/* <p>Land Ownder Info: {site.info.parcel_geometry.features.reduce((acc, feat) => (feat.properties && feat.properties.ownder)? acc + ", " + feat.properties.owner : acc, "")}</p> */}
                     </Content>
-                </CardContent>
+                </Card.Content>
             ) : null}
         </Card>
     );

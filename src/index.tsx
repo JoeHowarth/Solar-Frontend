@@ -2,8 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import mapboxgl, { Map } from "mapbox-gl";
+// import 'react-bulma-components/dist/react-bulma-components.min.css';
 import Counties from "./counties.json";
 import App from "./app";
+import './solar-styles.scss'
 
 console.log("ping...ping...");
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { Box } from "bloomer/lib/elements/Box";
 import { withRouter } from "react-router-dom";
 
 const ParameterEditor = ({ history, params: [params, setParams] }) => {

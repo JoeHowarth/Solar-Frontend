@@ -1,12 +1,12 @@
 import React, { Component, useState, Dispatch, SetStateAction } from "react";
 import { Route, Switch } from "react-router-dom";
-import { Container, Box } from "bloomer";
 import mapboxgl, { Map } from "mapbox-gl";
 import SolarMenu, { Base } from "./menu";
 import NewQuery from "./new-query";
 import ParameterEditor from "./parameter-editor";
 import SiteSelector from "./site-selector";
 import { Parameters } from "./solar-api";
+import Container from 'react-bulma-components/lib/components/container'
 
 export type State<T> = [T, Dispatch<SetStateAction<T>>];
 export interface County {name: string, id: number, feature: any}
