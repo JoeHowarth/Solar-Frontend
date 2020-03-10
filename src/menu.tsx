@@ -6,7 +6,7 @@ import Box from 'react-bulma-components/lib/components/box'
 import Image from 'react-bulma-components/lib/components/image'
 import logo from "../solar_solve_logo1.png";
 
-export const Base: FC<{}> = props => (
+export const Base = props => (
     <Box className="mainContainer">
         <Link to="/">
             <Image size={128} src={logo} />
@@ -14,6 +14,7 @@ export const Base: FC<{}> = props => (
         {props.children}
     </Box>
 );
+
 
 const SolarMenu = () => (
     <Menu>

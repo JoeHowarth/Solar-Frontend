@@ -11,50 +11,55 @@ import { Link } from "react-router-dom"
 import mapboxgl, { Map } from "mapbox-gl"
 import { MapContext } from "./index"
 import { County } from "~app"
-import Button from 'react-bulma-components/lib/components/button'
+import Button from "react-bulma-components/lib/components/button"
 
-const NewQuery = withRouter(
-    ({
-        history,
-        setCounty
-    }: {
-        setCounty: Dispatch<SetStateAction<County>>
-        history
-    }) => {
-        const { map, rawMap } = useContext(MapContext)
+const NewQuery = withRouter(({ history, setCounty }) => {
+    const { map, rawMap } = useContext(MapContext)
 
-        useEffect(() => enableCountySelection(map, rawMap, setCounty), [])
+    useEffect(() => enableCountySelection(map, rawMap, setCounty), [])
 
-        return (
-            <div className="columns">
-                <div className="column">
-                    <div className="has-margin-top-1">
-                        <Button
-                            onClick={() => {
-                                history.push("site-selector")
-                            }}
-                            className=" is-fullwidth "
-                        >
-                            Solve
-                        </Button>
-                    </div>
-
-                    <div
-                        className="has-margin-top-1"
-                        style={{ marginTop: "10px" }}
+    return (
+        <div className="columns">
+            <div className="column">
+                <div className="has-margin-top-1">
+                    <Button
+                        onClick={() => {
+                            history.push("site-selector")
+                        }}
+                        className=" is-fullwidth "
                     >
-                        <Link
-                            className="button is-secondary is-fullwidth"
-                            to="edit-parameters"
-                        >
-                            Edit Model Parameters
-                        </Link>
-                    </div>
+                        Solve
+                    </Button>
+                </div>
+
+                <div className="has-margin-top-1" style={{ marginTop: "10px" }}>
+                    <Link
+                        className="button is-secondary is-fullwidth"
+                        to="edit-parameters"
+                    >
+                        Edit Model Parameters
+                    </Link>
                 </div>
             </div>
-        )
-    }
-)
+        </div>
+    )
+})
+
+const app = () => {
+    const [name, setName] = useState(null)
+
+    useEffect(
+        () =>
+            fetch({ url: "hi" })
+                .then(r => setName(r.name))
+                .catch(() => alert("whoops")),
+        []
+    )
+
+    return <Greeter name={name}></Greeter>
+}
+
+const Greeter = ({ name }) => <p>Hi {name}</p>
 
 const enableCountySelection = (
     map: Promise<Map>,
