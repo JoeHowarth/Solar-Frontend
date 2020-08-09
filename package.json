@@ -51,6 +51,7 @@
         "react-hot-loader": "^4.12.18",
         "sass": "^1.26.2",
         "typescript": "^3.7.3",
+        "minimist": ">=1.2.3",
         "kind-of": ">=6.0.3"
     }
 }
