@@ -50,6 +50,7 @@
         "parcel-bundler": "^1.12.4",
         "react-hot-loader": "^4.12.18",
         "sass": "^1.26.2",
-        "typescript": "^3.7.3"
+        "typescript": "^3.7.3",
+        "kind-of": ">=6.0.3"
     }
 }
